@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>From DJ <3</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <style>
+    body {
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 90vh;
+        background-color: black;
+        color: #fff;
+        font-family: Perpetua, sans-serif;
+    }
+
+    .flower-container {
+           position: relative;
+           animation: flowerAnimation 3s ease-in-out infinite alternate; /* Adjust animation duration and timing */
+    }
+
+    h1 {
+        position: absolute;
+        top: 0px;
+        left: 51%;
+        transform: translateX(-50%);
+        z-index: 1;
+        color: #fff;
+        font-size: 36px;
+    }
+
+    @keyframes flowerAnimation {
+           0% {
+               transform: translateY(0);
+           }
+           50% {
+               transform: translateY(-20px); /* Adjust the amount of movement */
+           }
+           100% {
+               transform: translateY(0);
+           }
+       }
+</style>
+
+    <h1 style="text-align: center;">Tiffanee ♡</h1>
+
+    <div class="flower-container">
+        <svg viewBox="0 0 200 350" class="flower-svg">
+            <!-- Petal 1 -->
+            <rect x="95" y="100" width="20" height="600" fill="#32cd32" />
+
+            <path d="M100,100 C130,60 150,30 140,10 C130,-10 90,10 70,30 C50,50 60,70 100,100"
+                  fill="url(#petal-gradient)" transform="rotate(0 100 100)" />
+            <!-- Petal 2 -->
+            <path d="M100,100 C130,60 150,30 140,10 C130,-10 90,10 70,30 C50,50 60,70 100,100"
+                  fill="url(#petal-gradient)" transform="rotate(60 100 100)" />
+            <!-- Petal 3 -->
+            <path d="M100,100 C130,60 150,30 140,10 C130,-10 90,10 70,30 C50,50 60,70 100,100"
+                  fill="url(#petal-gradient)" transform="rotate(120 100 100)" />
+            <!-- Petal 4 -->
+            <path d="M100,100 C130,60 150,30 140,10 C130,-10 90,10 70,30 C50,50 60,70 100,100"
+                  fill="url(#petal-gradient)" transform="rotate(180 100 100)" />
+            <!-- Petal 5 -->
+            <path d="M100,100 C130,60 150,30 140,10 C130,-10 90,10 70,30 C50,50 60,70 100,100"
+                  fill="url(#petal-gradient)" transform="rotate(240 100 100)" />
+            <!-- Petal 6 -->
+            <path d="M100,100 C130,60 150,30 140,10 C130,-10 90,10 70,30 C50,50 60,70 100,100"
+                  fill="url(#petal-gradient)" transform="rotate(300 100 100)" />
+            <!-- Flower Center -->
+            <circle cx="100" cy="100" r="20" fill="yellow" />
+            <!-- Gradients Definition -->
+            <defs>
+                <linearGradient id="petal-gradient" x1="0" y1="0" x2="1" y2="1">
+                    <stop offset="0%" style="stop-color:#ff69b4;stop-opacity:1" />
+                    <stop offset="100%" style="stop-color:#ff1493;stop-opacity:1" />
+                </linearGradient>
+                <linearGradient id="stem-gradient" x1="0" y1="0" x2="0" y2="1">
+                    <stop offset="0%" style="stop-color:#006400;stop-opacity:1" />
+                    <stop offset="100%" style="stop-color:#32cd32;stop-opacity:1" />
+                </linearGradient>
+            </defs>
+        </svg>
+    </div>
+</body>
+</html>

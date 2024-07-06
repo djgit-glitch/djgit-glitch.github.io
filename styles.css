@@ -1,0 +1,19 @@
+body {
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.flower-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flower-svg {
+    width: 200px;
+    height: 300px;
+}
